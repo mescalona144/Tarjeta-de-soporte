@@ -1,0 +1,205 @@
+/* Regla General*/
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilos de la hompage*/
+body{
+    font-size: 16px;
+    background-color: rgb(212, 216, 238);
+    padding: 10px;
+}
+
+h1{
+    font-size: 16px;
+    text-align: center;
+    margin: 8px;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+span{
+    font-size: 14px;
+    padding-bottom: 40px;
+    
+}
+
+/* Estilos del formulario de la tarjeta*/
+#exampleFormControlSelect2{
+    margin-top: 40px;
+}
+
+#exampleFormControlSelect1{
+    margin-top: 10px;
+}
+
+form{
+    width: 335px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.form-group{
+    text-align: center;
+}
+
+textarea, .form-control{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: rgb(212, 216, 238);
+    cursor: pointer;
+    text-align: center;
+}
+label{
+    text-align: center;
+    display: block;
+}
+
+#exampleFormControlSelect4{
+    cursor: default;
+}
+
+/* Estilos del botón "enviar comentario" */
+.btn-primary{
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto; 
+    display: flex;
+    position: relative; 
+    width: 80%;  
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.btn-primary:hover{
+    background-color: rgb(44, 39, 88);
+}
+
+.select{
+    margin: 30px;
+}
+
+
+/*Estilos del emoji*/
+/*La valoración con emoji no pude ejecutarla como se indica en la prueba, sin embargo, coloqué un par de efectos con CSS, que es transition y hover*/
+.emoji{
+    cursor: pointer;
+    margin: 30px 15px;
+}
+
+.emoji:hover{
+    transition:all 0.8s;
+    transform: scale(1.3)
+}
+
+/*Acá comienzo a aplicar el responsive */
+@media (max-widht:335px) {
+    form{
+        width: 100%;
+        
+    }
+
+    .emoji{
+        cursor: pointer;
+        margin: 5px 5px;
+    }
+    
+}
+
+@media screen and (min-width: 576px){
+    form{
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: 768px){
+    .soporte{
+        width: 48%; 
+        height: auto;
+        float: left;
+        margin-left: 10px;  
+    }
+
+    .soporte1{
+        width: 48%;
+        float: right;
+        margin-right: 10px;
+    }
+    #exampleFormControlSelect2{
+        margin-top: 8px;
+    }
+
+    .emoji{
+        cursor: pointer;
+        margin: 20px 10px;
+    }
+    
+}
+    /*
+    .soporte{
+        width: 60%;
+        float: left;  
+        
+    }
+
+    h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    span{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    #exampleFormControlSelect2{
+        margin-top: 10px;
+    }
+
+    .soporte1{
+        width: 60%;
+        float: right;
+    }
+}*/
+@media screen and (min-width: 1024px){
+    .soporte{
+        width: 40%; 
+        height: auto;
+        float: left;
+        margin-left: 80px;  
+    }
+
+    .soporte1{
+        width: 40%;
+        float: right;
+        margin-right: 80px;
+    }
+    #exampleFormControlSelect2{
+        margin-top: 8px;
+    }
+
+    .emoji{
+        cursor: pointer;
+        margin: 20px 10px;
+    }
+    
+}
